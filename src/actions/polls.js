@@ -1,7 +1,7 @@
 import { savePoll } from "../utils/api";
 import { showLoading, hideLoading } from "react-redux-loading-bar";
 
-export const APP_POLL = "ADD_POLL";
+export const ADD_POLL = "ADD_POLL";
 export const RECEIVE_POLLS = "RECEIVE_POLLS";
 
 function addPoll(poll) {
