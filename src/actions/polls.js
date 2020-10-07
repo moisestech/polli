@@ -11,7 +11,7 @@ function addPoll(poll) {
   };
 }
 
-export function receivePolls(poll) {
+export function receivePolls(polls) {
   return {
     type: RECEIVE_POLLS,
     polls,
