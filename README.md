@@ -39,3 +39,8 @@ Polls redux react.js application
 ![](https://user-images.githubusercontent.com/2933430/81010652-d2c6fb00-8e13-11ea-8fa2-188b87f15db0.png)
 
 ![](https://user-images.githubusercontent.com/2933430/81010661-d65a8200-8e13-11ea-8db2-4571602b9fa1.png)
+
+### ToDos
+
+- add Redux Documentation
+- add Redux Tollkit Documentation
