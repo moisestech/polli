@@ -46,6 +46,21 @@ li {
   list-style-type: none;
 }
 
+/* LOGO */
+
+span.logo {
+  object-fit: contain;
+  position: relative;
+  display: block;
+}
+
+span.logo img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* CONTAINER */
+
 .border-container {
   padding: 0;
   margin: 0;
@@ -69,6 +84,8 @@ li {
   margin: 0 auto;
 }
 
+/* OPTIONS */
+
 .option {
   border: 1px solid var(--white);
   margin: 10px;
@@ -88,6 +105,8 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
+/* AUTHOR */
 
 .poll-author {
   display: flex;
@@ -135,6 +154,8 @@ li {
   font-weight: 900;
 }
 
+/* NAV */
+
 .nav {
   margin: 30px 0;
 }
@@ -147,6 +168,8 @@ li {
   padding-left: 0;
 }
 
+/* LIST */
+
 ul {
   padding-left: 0;
 }
@@ -156,6 +179,8 @@ li {
   padding: 10px;
   text-decoration: none;
 }
+
+/* DASHBOARD */
 
 .dashboard-toggle {
   display: flex;
@@ -190,6 +215,8 @@ li {
   font-weight: 900;
 }
 
+/* POLL CONTAINER */
+
 .add-poll-container {
   display: flex;
   flex-direction: column;
@@ -203,10 +230,14 @@ li {
   flex-direction: column;
 }
 
+/* QUESTION */
+
 .question {
   font-size: 30px;
   text-align: center;
 }
+
+/* AVATAR */
 
 .avatar {
   width: 40px;
@@ -214,6 +245,8 @@ li {
   border-radius: 20px;
   margin-top: 10px;
 }
+
+/* USER */
 
 .user {
   display: flex;
@@ -243,21 +276,14 @@ li {
   }
 }
 
+/* FORM */
+
 .add-form {
   margin: 0 auto;
   width: 600px;
 }
 
-input {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 0;
-  appearance: none;
-  margin-bottom: 20px;
-}
+/* BUTTON */
 
 .btn {
   max-width: 240px;
@@ -275,10 +301,25 @@ input {
   cursor: pointer;
 }
 
+/* LABEL */
+
 .label {
   display: block;
   margin-bottom: 0.25em;
   font-size: 20px;
+}
+
+/* INPUT */
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  margin-bottom: 20px;
 }
 
 .input {
