@@ -2,7 +2,7 @@ import { getInitialData } from "../utils/api";
 import { setAuthedUser } from "../actions/authedUser";
 import { receiveUsers } from "../actions/users";
 import { receivePolls } from "../actions/polls";
-import { showLoading, hideLoading } from "react-redux-loading";
+import { showLoading, hideLoading } from "react-redux-loading-bar";
 
 export function handleInitialData() {
   return (dispatch) => {
