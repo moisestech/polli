@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { handleInitialData } from "../actions/shared";
-import Logo from "./Logo";
+
+import Nav from "./Nav";
 import Leaderboard from "./Leaderboard";
+import Dashboard from "./Dashboard";
+import AddPoll from "./AddPoll";
+import Poll from "./Poll";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -17,9 +22,26 @@ export default function App() {
   console.log("store", store);
 
   return (
-    <div className="app container">
-      <Logo />
-      {loading == true ? null : <Leaderboard />}
-    </div>
+    <Router>
+      <div className="app container">
+        <Nav />
+        {loading == true ? null : (
+          <div>
+            <Route path="/" exact>
+              <Dashboard />
+            </Route>
+            <Route path="/leaderboard">
+              <Leaderboard />
+            </Route>
+            <Route path="/polls/:id">
+              <Poll />
+            </Route>
+            <Route path="/add">
+              <AddPoll />
+            </Route>
+          </div>
+        )}
+      </div>
+    </Router>
   );
 }
