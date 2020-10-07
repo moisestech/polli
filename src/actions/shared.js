@@ -4,6 +4,8 @@ import { receiveUsers } from "../actions/users";
 import { receivePolls } from "../actions/polls";
 import { showLoading, hideLoading } from "react-redux-loading-bar";
 
+const AUTHED_ID = "tylermcginnis";
+
 export function handleInitialData() {
   return (dispatch) => {
     dispatch(showLoading());
