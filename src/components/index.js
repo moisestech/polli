@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { handleInitialData } from "../actions/shared";
+import Logo from "./Logo";
+import Leaderboard from "./Leaderboard";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -16,10 +18,8 @@ export default function App() {
 
   return (
     <div className="app container">
-      {loading == true ? null : <h1>Welcome to Polli App</h1>}
-      <span className="logo">
-        <img src="https://raw.githubusercontent.com/moisestech/polli/main/public/assets/polli_logo.png" />
-      </span>
+      <Logo />
+      {loading == true ? null : <Leaderboard />}
     </div>
   );
 }
