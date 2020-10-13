@@ -1,10 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b3640d7-61fc-44ba-b590-0bada1a2c399/deploy-status)](https://app.netlify.com/sites/polli/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/60c6c775-e60c-4c46-8034-c2fa29e84552/deploy-status)](https://app.netlify.com/sites/polli/deploys)
+🔗 [polli.netlify.com](https://polli.netlify.app)
 
 # Polli
 
 <img src="https://raw.githubusercontent.com/moisestech/polli/main/public/assets/polli_logo.png" width="150px"/>
 
-Polls redux react.js application
+**Polls redux react.js application**
 
 ## 👁️‍🗨️ Project Preview
 
@@ -16,7 +17,9 @@ Polls redux react.js application
 
 ![](https://user-images.githubusercontent.com/2933430/81010661-d65a8200-8e13-11ea-8db2-4571602b9fa1.png)
 
-### 🌿 App Tree
+## 🗺 URL Tree
+
+## 🌿 App Tree
 
 ```bash
 ├── README.md
@@ -44,7 +47,9 @@ Polls redux react.js application
 └── webpack.config.js
 ```
 
-## Todos
+## ⛰️ Roadmap
+
+## 📝 Todos
 
 - add Redux Documentation
 - add Redux Tollkit Documentation
