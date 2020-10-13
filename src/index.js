@@ -4,6 +4,7 @@ import App from "./components";
 
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+//import { configureStore } from '@reduxjs/toolkit'
 import reducer from "./reducers";
 import LoadingBar from "react-redux-loading-bar";
 import middleware from "./middleware";
