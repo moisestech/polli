@@ -2,7 +2,7 @@
 
 # Polli
 
-<img src="https://raw.githubusercontent.com/moisestech/chirp-react/master/public/chirp_logo.png" width="150px"/>
+<img src="https://raw.githubusercontent.com/moisestech/polli/main/public/assets/polli_logo.png" width="150px"/>
 
 Polls redux react.js application
 
