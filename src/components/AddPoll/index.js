@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { handleAddPoll } from "../../actions/polls";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
