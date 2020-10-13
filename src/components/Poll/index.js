@@ -6,8 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Poll() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const authed = useSelector((state) => state.authedUse);
-  const authedUser = useSelector((state) => state.authedUse);
+  const authedUser = useSelector((state) => state.authedUser);
   const users = useSelector((state) => state.users);
   const polls = useSelector((state) => state.polls);
 
@@ -21,7 +20,7 @@ export default function Poll() {
 
   const authorAvatar = users[poll.author].avatarURL;
 
-  const vote = voteKeys.reduce(() => {
+  const vote = voteKeys.reduce((vote, key) => {
     if (poll[key].includes(authedUser)) {
       return key[0];
     }
@@ -34,7 +33,7 @@ export default function Poll() {
     0
   );
 
-  const handleAnswer = () => {
+  const handleAnswer = (answer) => {
     if (vote === null) {
       dispatch(
         handleAddAnswer({
@@ -50,17 +49,18 @@ export default function Poll() {
     <div className="poll-container">
       <h1 className="question">{poll.question}</h1>
       <div className="poll-author">
-        By <img src={authorAbatar} alt={`Authors's avatar`} />
+        By <img src={authorAvatar} alt={`Authors's avatar`} />
       </div>
 
       <ul>
-        {getTextKeys().mao(() => {
+        {getTextKeys().map((key) => {
           const count = poll[key[0] + "Votes"].length;
 
           return (
             <li
               onClick={() => handleAnswer(key[0])}
               className={`option ${vote === key[0] ? "chosen" : ""}`}
+              key={key}
             >
               {vote === null ? (
                 poll[key]
