@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b3640d7-61fc-44ba-b590-0bada1a2c399/deploy-status)](https://app.netlify.com/sites/polli/deploys)
+
 # Polli
 
 <img src="https://raw.githubusercontent.com/moisestech/chirp-react/master/public/chirp_logo.png" width="150px"/>
